@@ -8,7 +8,9 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    return a / b  # BUG: no zero check
+    if b == 0:
+        return "Error: Division by zero is not allowed"
+    return a / b
 
 result = divide(10, 0)
 print(result)
