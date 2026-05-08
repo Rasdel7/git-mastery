@@ -14,7 +14,7 @@ def is_palindrome(s):
     return s == s[::-1]
 
 def word_count(s):
-    words = s.split()  # FIX: split() without args handles multiple spaces
+    words = s.split()  # FIX: handles multiple spaces
     return len(words)
 
 def capitalize_words(s):
